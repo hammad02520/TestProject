@@ -10,6 +10,7 @@ import HomeScreen from './screen/HomeScreen';
 import AddPost from './screen/AddPost';
 import FormScreen from './screen/FormScreen';
 import * as Font from 'expo-font';
+import Toast from 'react-native-toast-message';
 
 
 const Stack = createStackNavigator();
@@ -76,7 +77,9 @@ const Screens = () => {
 
   return (
     <Stack.Navigator>
-      {!formSubmitted && <Stack.Screen name="Form Data" component={FormScreen} />}
+      {!formSubmitted && <Stack.Screen options={{
+        headerShown: false
+      }} name="Form Data" component={FormScreen} />}
       <Stack.Screen
         options={{
           headerShown: false,
@@ -93,6 +96,7 @@ const App = () => {
     <Provider store={store}>
       <NavigationContainer>
         <Screens />
+        <Toast />
       </NavigationContainer>
     </Provider>
   );

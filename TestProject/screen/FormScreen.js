@@ -31,6 +31,7 @@ const FormComponent = () => {
                     text1: 'Validation Error',
                     text2: `${field.label} is required.`,
                 });
+
                 return;
             }
         }
@@ -47,7 +48,7 @@ const FormComponent = () => {
 
     return (
         <View style={{ flex: 1, backgroundColor: 'white', paddingHorizontal: 20, justifyContent: 'center' }}>
-            <Text style={{ alignSelf: 'center', fontSize: 28 }}>Form Data</Text>
+            <Text style={{ alignSelf: 'center', fontSize: 28, fontFamily: 'MyFont' }}>Form Data</Text>
             {formConfig.map((field) => (
                 <View style={{ marginVertical: 10 }} key={field.name}>
                     <CustomInput
@@ -71,9 +72,10 @@ const FormComponent = () => {
                     borderRadius: 5,
                     marginTop: 20,
                     justifyContent: 'center',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    paddingVertical: 15
                 }}>
-                <Text style={{ color: 'white', fontSize: 22 }}>Submit</Text>
+                <Text style={{ color: 'white', fontSize: 22, fontFamily: 'MyFont' }}>Submit</Text>
             </Pressable>
 
         </View>
