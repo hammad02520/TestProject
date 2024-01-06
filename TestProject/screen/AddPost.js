@@ -21,6 +21,8 @@ const AddPost = ({ navigation }) => {
             body,
         };
         dispatch(addPost(newPost));
+        setBody('')
+        setTitle('')
         navigation.goBack();
     };
 
