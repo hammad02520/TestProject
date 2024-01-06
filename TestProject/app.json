@@ -1,13 +1,16 @@
 {
   "expo": {
-    "name": "TestProject",
-    "slug": "TestProject",
+    "name": "Gridizen Test",
+    "slug": "gridizentest",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "fonts": {
+      "MyFont": "./fontsfamily/ProductSansRegular.ttf"
+    },
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/newSplash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
